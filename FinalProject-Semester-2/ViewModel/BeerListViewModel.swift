@@ -23,6 +23,9 @@ class BeerListViewModel {
         let url = "https://api.punkapi.com/v2/beers?page=\(currentPage)" + (searchText.isEmpty ? "" : "&beer_name=\(searchText)")
         apiManager?.fetch(urlString: url, completionHandler: {[weak self] dataArray in
             if let dataArray = dataArray {
+                DispatchQueue.main.async {
+                    DatabaseManager.shared.saveBeersToDBFor(beers: dataArray)
+                }
                 self?.currentPage == 1 ? self?.beers = dataArray : self?.beers.append(contentsOf: dataArray)
                 self?.hasMoreData = self?.currentPage ?? 1 > 1 && dataArray.count == 0 ? false : true
             }

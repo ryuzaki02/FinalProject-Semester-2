@@ -10,6 +10,21 @@
 		080B1E0F293C4ED100B4B818 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E0E293C4ED100B4B818 /* BeerListViewModel.swift */; };
 		080B1E12293C4EEA00B4B818 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E11293C4EEA00B4B818 /* BeerListViewController.swift */; };
 		080B1E15293C5D0300B4B818 /* Debouncer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E14293C5D0300B4B818 /* Debouncer.swift */; };
+		080B1E42293C656500B4B818 /* IngredientsDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E34293C656500B4B818 /* IngredientsDB+CoreDataClass.swift */; };
+		080B1E43293C656500B4B818 /* AmountDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E35293C656500B4B818 /* AmountDB+CoreDataClass.swift */; };
+		080B1E44293C656500B4B818 /* HopDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E36293C656500B4B818 /* HopDB+CoreDataClass.swift */; };
+		080B1E45293C656500B4B818 /* VolumeDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E37293C656500B4B818 /* VolumeDB+CoreDataProperties.swift */; };
+		080B1E46293C656500B4B818 /* MaltDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E38293C656500B4B818 /* MaltDB+CoreDataProperties.swift */; };
+		080B1E47293C656500B4B818 /* FoodPairingDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E39293C656500B4B818 /* FoodPairingDB+CoreDataProperties.swift */; };
+		080B1E48293C656500B4B818 /* VolumeDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E3A293C656500B4B818 /* VolumeDB+CoreDataClass.swift */; };
+		080B1E49293C656500B4B818 /* MaltDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E3B293C656500B4B818 /* MaltDB+CoreDataClass.swift */; };
+		080B1E4A293C656500B4B818 /* HopDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E3C293C656500B4B818 /* HopDB+CoreDataProperties.swift */; };
+		080B1E4B293C656500B4B818 /* IngredientsDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E3D293C656500B4B818 /* IngredientsDB+CoreDataProperties.swift */; };
+		080B1E4C293C656500B4B818 /* AmountDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E3E293C656500B4B818 /* AmountDB+CoreDataProperties.swift */; };
+		080B1E4D293C656500B4B818 /* FoodPairingDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E3F293C656500B4B818 /* FoodPairingDB+CoreDataClass.swift */; };
+		080B1E4E293C656500B4B818 /* BeerDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E40293C656500B4B818 /* BeerDB+CoreDataClass.swift */; };
+		080B1E4F293C656500B4B818 /* BeerDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E41293C656500B4B818 /* BeerDB+CoreDataProperties.swift */; };
+		080B1E51293C68E000B4B818 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E50293C68E000B4B818 /* DatabaseManager.swift */; };
 		08D614B7293B061D006C8B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D614B6293B061D006C8B55 /* AppDelegate.swift */; };
 		08D614B9293B061D006C8B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D614B8293B061D006C8B55 /* SceneDelegate.swift */; };
 		08D614BE293B061D006C8B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D614BC293B061D006C8B55 /* Main.storyboard */; };
@@ -24,6 +39,21 @@
 		080B1E0E293C4ED100B4B818 /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
 		080B1E11293C4EEA00B4B818 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		080B1E14293C5D0300B4B818 /* Debouncer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Debouncer.swift; sourceTree = "<group>"; };
+		080B1E34293C656500B4B818 /* IngredientsDB+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IngredientsDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		080B1E35293C656500B4B818 /* AmountDB+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AmountDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		080B1E36293C656500B4B818 /* HopDB+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HopDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		080B1E37293C656500B4B818 /* VolumeDB+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VolumeDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		080B1E38293C656500B4B818 /* MaltDB+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MaltDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		080B1E39293C656500B4B818 /* FoodPairingDB+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FoodPairingDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		080B1E3A293C656500B4B818 /* VolumeDB+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "VolumeDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		080B1E3B293C656500B4B818 /* MaltDB+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MaltDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		080B1E3C293C656500B4B818 /* HopDB+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HopDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		080B1E3D293C656500B4B818 /* IngredientsDB+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "IngredientsDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		080B1E3E293C656500B4B818 /* AmountDB+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AmountDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		080B1E3F293C656500B4B818 /* FoodPairingDB+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FoodPairingDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		080B1E40293C656500B4B818 /* BeerDB+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BeerDB+CoreDataClass.swift"; sourceTree = "<group>"; };
+		080B1E41293C656500B4B818 /* BeerDB+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BeerDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		080B1E50293C68E000B4B818 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
 		08D614B3293B061D006C8B55 /* FinalProject-Semester-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FinalProject-Semester-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D614B6293B061D006C8B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08D614B8293B061D006C8B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -71,6 +101,36 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		080B1E16293C651D00B4B818 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				080B1E17293C652200B4B818 /* DBModels */,
+				080B1E50293C68E000B4B818 /* DatabaseManager.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		080B1E17293C652200B4B818 /* DBModels */ = {
+			isa = PBXGroup;
+			children = (
+				080B1E35293C656500B4B818 /* AmountDB+CoreDataClass.swift */,
+				080B1E3E293C656500B4B818 /* AmountDB+CoreDataProperties.swift */,
+				080B1E40293C656500B4B818 /* BeerDB+CoreDataClass.swift */,
+				080B1E41293C656500B4B818 /* BeerDB+CoreDataProperties.swift */,
+				080B1E3F293C656500B4B818 /* FoodPairingDB+CoreDataClass.swift */,
+				080B1E39293C656500B4B818 /* FoodPairingDB+CoreDataProperties.swift */,
+				080B1E36293C656500B4B818 /* HopDB+CoreDataClass.swift */,
+				080B1E3C293C656500B4B818 /* HopDB+CoreDataProperties.swift */,
+				080B1E34293C656500B4B818 /* IngredientsDB+CoreDataClass.swift */,
+				080B1E3D293C656500B4B818 /* IngredientsDB+CoreDataProperties.swift */,
+				080B1E3B293C656500B4B818 /* MaltDB+CoreDataClass.swift */,
+				080B1E38293C656500B4B818 /* MaltDB+CoreDataProperties.swift */,
+				080B1E3A293C656500B4B818 /* VolumeDB+CoreDataClass.swift */,
+				080B1E37293C656500B4B818 /* VolumeDB+CoreDataProperties.swift */,
+			);
+			path = DBModels;
+			sourceTree = "<group>";
+		};
 		08D614AA293B061D006C8B55 = {
 			isa = PBXGroup;
 			children = (
@@ -90,6 +150,7 @@
 		08D614B5293B061D006C8B55 /* FinalProject-Semester-2 */ = {
 			isa = PBXGroup;
 			children = (
+				080B1E16293C651D00B4B818 /* Database */,
 				080B1E13293C5CF100B4B818 /* Helper */,
 				080B1E10293C4ED700B4B818 /* Controller */,
 				080B1E0D293C4EC200B4B818 /* ViewModel */,
@@ -193,14 +254,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				080B1E48293C656500B4B818 /* VolumeDB+CoreDataClass.swift in Sources */,
+				080B1E4F293C656500B4B818 /* BeerDB+CoreDataProperties.swift in Sources */,
 				08D614C1293B061D006C8B55 /* FinalProject_Semester_2.xcdatamodeld in Sources */,
 				080B1E15293C5D0300B4B818 /* Debouncer.swift in Sources */,
 				08D614B7293B061D006C8B55 /* AppDelegate.swift in Sources */,
+				080B1E51293C68E000B4B818 /* DatabaseManager.swift in Sources */,
 				080B1E12293C4EEA00B4B818 /* BeerListViewController.swift in Sources */,
+				080B1E4A293C656500B4B818 /* HopDB+CoreDataProperties.swift in Sources */,
 				08D614CF293BD821006C8B55 /* BeerModel.swift in Sources */,
+				080B1E4C293C656500B4B818 /* AmountDB+CoreDataProperties.swift in Sources */,
+				080B1E43293C656500B4B818 /* AmountDB+CoreDataClass.swift in Sources */,
 				08D614D2293BF196006C8B55 /* ApiManager.swift in Sources */,
+				080B1E45293C656500B4B818 /* VolumeDB+CoreDataProperties.swift in Sources */,
 				080B1E0F293C4ED100B4B818 /* BeerListViewModel.swift in Sources */,
 				08D614B9293B061D006C8B55 /* SceneDelegate.swift in Sources */,
+				080B1E42293C656500B4B818 /* IngredientsDB+CoreDataClass.swift in Sources */,
+				080B1E46293C656500B4B818 /* MaltDB+CoreDataProperties.swift in Sources */,
+				080B1E4B293C656500B4B818 /* IngredientsDB+CoreDataProperties.swift in Sources */,
+				080B1E4D293C656500B4B818 /* FoodPairingDB+CoreDataClass.swift in Sources */,
+				080B1E49293C656500B4B818 /* MaltDB+CoreDataClass.swift in Sources */,
+				080B1E47293C656500B4B818 /* FoodPairingDB+CoreDataProperties.swift in Sources */,
+				080B1E4E293C656500B4B818 /* BeerDB+CoreDataClass.swift in Sources */,
+				080B1E44293C656500B4B818 /* HopDB+CoreDataClass.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
