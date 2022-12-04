@@ -8,26 +8,22 @@
 import Foundation
 
 struct BeerModel: Codable {
-    var id: String
+    var id: Int
     var name: String
     var tagline: String
     var first_brewed: String
     var description: String
-    var ph: String
-    var attenuation_level: String
+    var ph: Double
+    var attenuation_level: Int
     var volume: Volume
-    var food_pairing: [FoodPairing]
+    var food_pairing: [String]
     var brewers_tips: String
     var ingredients: Ingredients
 }
 
 struct Volume: Codable {
-    var value: String
+    var value: Int
     var unit: String
-}
-
-struct FoodPairing: Codable {
-    var item: String
 }
 
 struct Ingredients: Codable {
@@ -42,7 +38,7 @@ struct Malt: Codable {
 }
 
 struct MaltAmount: Codable {
-    var value: String
+    var value: Double
     var unit: String
 }
 
