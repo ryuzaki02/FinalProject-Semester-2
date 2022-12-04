@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="WSg-eZ-Vt7">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -9,10 +9,26 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="ZFq-fw-XMn">
+            <objects>
+                <navigationController id="WSg-eZ-Vt7" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="OQF-B7-EK6">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="6xc-O4-TU8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cbS-Cu-Oqd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-850" y="48"/>
+        </scene>
+        <!--Beer List View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalProject_Semester_2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BeerListViewController" customModule="FinalProject_Semester_2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,7 +63,21 @@
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="qvc-aP-sQt">
                                         <rect key="frame" x="0.0" y="156" width="393" height="696"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="BeerTableViewCell" id="GCB-Wg-2LQ">
+                                                <rect key="frame" x="0.0" y="50" width="393" height="43.666667938232422"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="GCB-Wg-2LQ" id="P0E-HJ-9eO">
+                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="43.666667938232422"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
                                     </tableView>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="xec-rR-k8z">
+                                        <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
+                                        <color key="color" systemColor="systemTealColor"/>
+                                    </activityIndicatorView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -55,12 +85,14 @@
                                     <constraint firstItem="zUL-qs-pkz" firstAttribute="leading" secondItem="vo1-Xh-Na8" secondAttribute="leading" id="IKP-u0-Efm"/>
                                     <constraint firstItem="XBA-6R-9Ak" firstAttribute="top" secondItem="zUL-qs-pkz" secondAttribute="bottom" id="Jxd-gz-SEu"/>
                                     <constraint firstAttribute="trailing" secondItem="zUL-qs-pkz" secondAttribute="trailing" id="RSO-XE-hTL"/>
+                                    <constraint firstItem="xec-rR-k8z" firstAttribute="centerX" secondItem="vo1-Xh-Na8" secondAttribute="centerX" id="S7f-Jv-ryk"/>
                                     <constraint firstItem="XBA-6R-9Ak" firstAttribute="leading" secondItem="vo1-Xh-Na8" secondAttribute="leading" id="WfB-jw-cfF"/>
                                     <constraint firstItem="qvc-aP-sQt" firstAttribute="leading" secondItem="vo1-Xh-Na8" secondAttribute="leading" id="fd5-u3-aqY"/>
                                     <constraint firstAttribute="trailing" secondItem="qvc-aP-sQt" secondAttribute="trailing" id="l5h-1k-tVl"/>
                                     <constraint firstAttribute="trailing" secondItem="XBA-6R-9Ak" secondAttribute="trailing" id="mJe-do-cK4"/>
                                     <constraint firstItem="zUL-qs-pkz" firstAttribute="top" secondItem="vo1-Xh-Na8" secondAttribute="top" id="oxM-Xu-NWk"/>
                                     <constraint firstAttribute="bottom" secondItem="qvc-aP-sQt" secondAttribute="bottom" id="um1-ru-H9e"/>
+                                    <constraint firstItem="xec-rR-k8z" firstAttribute="centerY" secondItem="vo1-Xh-Na8" secondAttribute="centerY" id="wt4-Qj-JOa"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -73,6 +105,11 @@
                             <constraint firstAttribute="bottom" secondItem="vo1-Xh-Na8" secondAttribute="bottom" id="uwu-kL-NvI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="9nF-eL-xci"/>
+                    <connections>
+                        <outlet property="beersTableView" destination="qvc-aP-sQt" id="45h-bj-e5G"/>
+                        <outlet property="loaderView" destination="xec-rR-k8z" id="C6f-AX-Ea2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,6 +122,9 @@
         </systemColor>
         <systemColor name="systemCyanColor">
             <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

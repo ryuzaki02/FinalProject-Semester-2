@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		080B1E0F293C4ED100B4B818 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E0E293C4ED100B4B818 /* BeerListViewModel.swift */; };
+		080B1E12293C4EEA00B4B818 /* BeerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E11293C4EEA00B4B818 /* BeerListViewController.swift */; };
 		08D614B7293B061D006C8B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D614B6293B061D006C8B55 /* AppDelegate.swift */; };
 		08D614B9293B061D006C8B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D614B8293B061D006C8B55 /* SceneDelegate.swift */; };
 		08D614BE293B061D006C8B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D614BC293B061D006C8B55 /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		080B1E0E293C4ED100B4B818 /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
+		080B1E11293C4EEA00B4B818 /* BeerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewController.swift; sourceTree = "<group>"; };
 		08D614B3293B061D006C8B55 /* FinalProject-Semester-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FinalProject-Semester-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D614B6293B061D006C8B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08D614B8293B061D006C8B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +45,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		080B1E0D293C4EC200B4B818 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				080B1E0E293C4ED100B4B818 /* BeerListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		080B1E10293C4ED700B4B818 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				080B1E11293C4EEA00B4B818 /* BeerListViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		08D614AA293B061D006C8B55 = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +80,8 @@
 		08D614B5293B061D006C8B55 /* FinalProject-Semester-2 */ = {
 			isa = PBXGroup;
 			children = (
+				080B1E10293C4ED700B4B818 /* Controller */,
+				080B1E0D293C4EC200B4B818 /* ViewModel */,
 				08D614D0293BF110006C8B55 /* Network */,
 				08D614CD293BD803006C8B55 /* Model */,
 				08D614B6293B061D006C8B55 /* AppDelegate.swift */,
@@ -162,8 +184,10 @@
 			files = (
 				08D614C1293B061D006C8B55 /* FinalProject_Semester_2.xcdatamodeld in Sources */,
 				08D614B7293B061D006C8B55 /* AppDelegate.swift in Sources */,
+				080B1E12293C4EEA00B4B818 /* BeerListViewController.swift in Sources */,
 				08D614CF293BD821006C8B55 /* BeerModel.swift in Sources */,
 				08D614D2293BF196006C8B55 /* ApiManager.swift in Sources */,
+				080B1E0F293C4ED100B4B818 /* BeerListViewModel.swift in Sources */,
 				08D614B9293B061D006C8B55 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,13 +13,13 @@ struct ApiManager {
         return URLSession(configuration: config)
     }()
     
-    func fetch(urlString: String = "") {
+    func fetch(urlString: String = "", completionHandler: (([BeerModel]?) -> (Void))?) {
         guard
             let url = URL(string: urlString)
         else{
             preconditionFailure("was not able to convert string to url: \(urlString)")
         }
-        
+        print(urlString)
         let request = URLRequest(url: url)
         let task = session.dataTask(with: request) {
             data, response, error in
@@ -27,8 +27,8 @@ struct ApiManager {
             if let data = data {
                 let decoder = JSONDecoder()
                 do {
-                    let decoded = try decoder.decode([BeerModel].self, from: data)
-                    print(decoded)
+                    let decoded = try decoder.decode([BeerModel].self, from: data)                    
+                    completionHandler?(decoded)
                 } catch {
                     print("Failed to decode JSON")
                 }
