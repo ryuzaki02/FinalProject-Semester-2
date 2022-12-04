@@ -11,8 +11,10 @@ class BeerListViewController: UIViewController {
     
     @IBOutlet weak var beersTableView: UITableView!
     @IBOutlet weak var loaderView: UIActivityIndicatorView!
+    @IBOutlet weak var searchBar: UISearchBar!
     
     private lazy var viewModel = BeerListViewModel()
+    private var debouncer = Debouncer(delay: 1.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,6 +25,7 @@ class BeerListViewController: UIViewController {
         beersTableView.dataSource = self
         showLoader(show: true)
         
+        searchBar.delegate = self
         
         // Calls method to get data from server
         viewModel.currentPage = 1
@@ -65,7 +68,7 @@ extension BeerListViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        if indexPath.row == viewModel.beers.count - 2 {
+        if indexPath.row == viewModel.beers.count - 2 && viewModel.hasMoreData {
             viewModel.currentPage += 1
             getServerData()
         }
@@ -85,4 +88,15 @@ extension BeerListViewController: UITableViewDelegate {
 //        }
     }
     
+}
+
+extension BeerListViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        debouncer.debounce { [weak self] in
+            self?.showLoader(show: true)
+            self?.viewModel.currentPage = 1
+            self?.viewModel.searchText = searchText
+            self?.getServerData()
+        }
+    }
 }

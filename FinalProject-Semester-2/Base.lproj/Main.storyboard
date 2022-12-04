@@ -109,6 +109,7 @@
                     <connections>
                         <outlet property="beersTableView" destination="qvc-aP-sQt" id="45h-bj-e5G"/>
                         <outlet property="loaderView" destination="xec-rR-k8z" id="C6f-AX-Ea2"/>
+                        <outlet property="searchBar" destination="XBA-6R-9Ak" id="EtG-AI-fmi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
