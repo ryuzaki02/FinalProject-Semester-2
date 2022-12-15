@@ -25,6 +25,7 @@
 		080B1E4E293C656500B4B818 /* BeerDB+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E40293C656500B4B818 /* BeerDB+CoreDataClass.swift */; };
 		080B1E4F293C656500B4B818 /* BeerDB+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E41293C656500B4B818 /* BeerDB+CoreDataProperties.swift */; };
 		080B1E51293C68E000B4B818 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 080B1E50293C68E000B4B818 /* DatabaseManager.swift */; };
+		0817DB1C294BAED4006564A9 /* IngredientsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0817DB1B294BAED4006564A9 /* IngredientsViewController.swift */; };
 		08D614B7293B061D006C8B55 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D614B6293B061D006C8B55 /* AppDelegate.swift */; };
 		08D614B9293B061D006C8B55 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08D614B8293B061D006C8B55 /* SceneDelegate.swift */; };
 		08D614BE293B061D006C8B55 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08D614BC293B061D006C8B55 /* Main.storyboard */; };
@@ -54,6 +55,7 @@
 		080B1E40293C656500B4B818 /* BeerDB+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BeerDB+CoreDataClass.swift"; sourceTree = "<group>"; };
 		080B1E41293C656500B4B818 /* BeerDB+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "BeerDB+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		080B1E50293C68E000B4B818 /* DatabaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		0817DB1B294BAED4006564A9 /* IngredientsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsViewController.swift; sourceTree = "<group>"; };
 		08D614B3293B061D006C8B55 /* FinalProject-Semester-2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "FinalProject-Semester-2.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		08D614B6293B061D006C8B55 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08D614B8293B061D006C8B55 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				080B1E11293C4EEA00B4B818 /* BeerListViewController.swift */,
+				0817DB1B294BAED4006564A9 /* IngredientsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				080B1E4D293C656500B4B818 /* FoodPairingDB+CoreDataClass.swift in Sources */,
 				080B1E49293C656500B4B818 /* MaltDB+CoreDataClass.swift in Sources */,
 				080B1E47293C656500B4B818 /* FoodPairingDB+CoreDataProperties.swift in Sources */,
+				0817DB1C294BAED4006564A9 /* IngredientsViewController.swift in Sources */,
 				080B1E4E293C656500B4B818 /* BeerDB+CoreDataClass.swift in Sources */,
 				080B1E44293C656500B4B818 /* HopDB+CoreDataClass.swift in Sources */,
 			);

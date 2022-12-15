@@ -82,10 +82,10 @@ extension BeerListViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "BreedImageViewController") as? BreedImageViewController {
-//            viewController.breedModel = breedsArray[indexPath.row]
-//            navigationController?.pushViewController(viewController, animated: true)
-//        }
+        if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "IngredientsViewController") as? IngredientsViewController {
+            viewController.beerModel = viewModel.beers[indexPath.row]
+            navigationController?.pushViewController(viewController, animated: true)
+        }
     }
     
 }
