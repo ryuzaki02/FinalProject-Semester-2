@@ -7,17 +7,20 @@
 
 import UIKit
 
-class BeerListViewController: UIViewController {
+class BeerListViewController: UIViewController, UINavigationControllerDelegate, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var beersTableView: UITableView!
     @IBOutlet weak var loaderView: UIActivityIndicatorView!
     @IBOutlet weak var searchBar: UISearchBar!
+    @IBOutlet weak var cameraButton: UIButton!
     
     private lazy var viewModel = BeerListViewModel()
     private var debouncer = Debouncer(delay: 1.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        cameraButton.layer.cornerRadius = 30
         
         // Setup table view and loader
         beersTableView.estimatedRowHeight = 50
@@ -52,7 +55,26 @@ class BeerListViewController: UIViewController {
             self?.showLoader(show: false)
         }
     }
+    
+    @IBAction func cameraButtonAction(_ sender: UIButton!) {
+        let vc = UIImagePickerController()
+        vc.sourceType = .camera
+        vc.allowsEditing = true
+        vc.delegate = self
+        present(vc, animated: true)
+    }
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        picker.dismiss(animated: true)
 
+        guard let image = info[.editedImage] as? UIImage else {
+            print("No image found")
+            return
+        }
+
+        // print out the image size as a test
+        print(image.size)
+    }
 }
 
 extension BeerListViewController: UITableViewDataSource {

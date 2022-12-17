@@ -78,6 +78,20 @@
                                         <rect key="frame" x="186.66666666666666" y="416" width="20" height="20"/>
                                         <color key="color" systemColor="systemTealColor"/>
                                     </activityIndicatorView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63d-LO-Isj">
+                                        <rect key="frame" x="318" y="762" width="60" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="emW-JP-amN"/>
+                                            <constraint firstAttribute="width" constant="60" id="yOV-8U-gOI"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="camera.fill" catalog="system" title=" "/>
+                                        <connections>
+                                            <action selector="cameraButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wNn-Af-zaC"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
@@ -87,7 +101,9 @@
                                     <constraint firstAttribute="trailing" secondItem="zUL-qs-pkz" secondAttribute="trailing" id="RSO-XE-hTL"/>
                                     <constraint firstItem="xec-rR-k8z" firstAttribute="centerX" secondItem="vo1-Xh-Na8" secondAttribute="centerX" id="S7f-Jv-ryk"/>
                                     <constraint firstItem="XBA-6R-9Ak" firstAttribute="leading" secondItem="vo1-Xh-Na8" secondAttribute="leading" id="WfB-jw-cfF"/>
+                                    <constraint firstAttribute="bottom" secondItem="63d-LO-Isj" secondAttribute="bottom" constant="30" id="c9H-9j-Gnu"/>
                                     <constraint firstItem="qvc-aP-sQt" firstAttribute="leading" secondItem="vo1-Xh-Na8" secondAttribute="leading" id="fd5-u3-aqY"/>
+                                    <constraint firstAttribute="trailing" secondItem="63d-LO-Isj" secondAttribute="trailing" constant="15" id="gyP-2m-uAp"/>
                                     <constraint firstAttribute="trailing" secondItem="qvc-aP-sQt" secondAttribute="trailing" id="l5h-1k-tVl"/>
                                     <constraint firstAttribute="trailing" secondItem="XBA-6R-9Ak" secondAttribute="trailing" id="mJe-do-cK4"/>
                                     <constraint firstItem="zUL-qs-pkz" firstAttribute="top" secondItem="vo1-Xh-Na8" secondAttribute="top" id="oxM-Xu-NWk"/>
@@ -108,6 +124,7 @@
                     <navigationItem key="navigationItem" id="9nF-eL-xci"/>
                     <connections>
                         <outlet property="beersTableView" destination="qvc-aP-sQt" id="45h-bj-e5G"/>
+                        <outlet property="cameraButton" destination="63d-LO-Isj" id="gIa-2h-LLn"/>
                         <outlet property="loaderView" destination="xec-rR-k8z" id="C6f-AX-Ea2"/>
                         <outlet property="searchBar" destination="XBA-6R-9Ak" id="EtG-AI-fmi"/>
                     </connections>
@@ -190,6 +207,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
